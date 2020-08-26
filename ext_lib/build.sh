@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+cd /root/ext_lib/
 echo -e "build cmake --------------"
 tar -zxvf cmake-3.8.2.tar.gz
 cd cmake-3.8.2
