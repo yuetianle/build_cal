@@ -32,3 +32,5 @@ cd boost_1_73_0
 ./b2 install --prefix=/usr/local cxxflags='-fPIC' cflags='-fPIC' toolset=gcc link=static runtime-link=shared threading=multi --with-filesystem --with-iostreams --with-regex --with-serialization --with-system --with-date_time --with-locale address-model=64
 echo -e "build fininshed!!!!"
 
+rm -rf /root/ext_lib/*
+
