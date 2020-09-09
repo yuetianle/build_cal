@@ -30,6 +30,11 @@ tar -zxvf boost_1_73_0.tar.gz
 cd boost_1_73_0
 ./bootstrap.sh
 ./b2 install --prefix=/usr/local cxxflags='-fPIC' cflags='-fPIC' toolset=gcc link=static runtime-link=shared threading=multi --with-filesystem --with-iostreams --with-regex --with-serialization --with-system --with-date_time --with-locale address-model=64
+echo -e "build gtest lib"
+cd ..
+tar -zxvf googletest-release-1.10.0.tar.gz
+cd gooletest-release-1.10.0
+./configure &&make install
 echo -e "build fininshed!!!!"
 
 rm -rf /root/ext_lib/*
