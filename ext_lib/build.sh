@@ -34,7 +34,7 @@ echo -e "build gtest lib"
 cd ..
 tar -zxvf googletest-release-1.10.0.tar.gz
 cd gooletest-release-1.10.0
-./configure &&make install
+cmake . &&make install
 echo -e "build fininshed!!!!"
 
 rm -rf /root/ext_lib/*
