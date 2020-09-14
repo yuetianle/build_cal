@@ -33,7 +33,7 @@ cd boost_1_73_0
 echo -e "build gtest lib"
 cd ..
 tar -zxvf googletest-release-1.10.0.tar.gz
-cd gooletest-release-1.10.0
+cd googletest-release-1.10.0
 cmake . &&make install
 echo -e "build fininshed!!!!"
 
