@@ -35,15 +35,6 @@ cd ..
 tar -zxvf googletest-release-1.10.0.tar.gz
 cd googletest-release-1.10.0
 cmake . &&make install
-cd ..
-echo -e "deploy jdk"
-tar -zxvf jdk-8u221-linux-x64.tar.gz -C /usr/local
-cat >>/etc/profile << EOF
-export JAVA_HOME=/usr/local/jdk1.8.0_221
-export CLASSPATH=.:${JAVA_HOME}/jre/lib/rt.jar:${JAVA_HOME}/lib/dt.jar:${JAVA_HOME}/lib/tools.jar
-export PATH=$PATH:${JAVA_HOME}/bin
-EOF
-source /etc/profile
 echo -e "build fininshed!!!!"
 
 rm -rf /root/ext_lib/*
